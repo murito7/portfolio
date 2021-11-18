@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-213392541-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-213392541-1');
+</script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website of Mariyan Popov">
+    <meta name="keywords" content="portfolio, html, css, mariyan popov">
+    <meta name="author" content="Mariyan Popov">
+    <title>Mariyan Popov </title>
+    <link class="favicon" rel="shourtcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="./styles/style.css"> 
+    <link rel="stylesheet" href="./styles/lightbox.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./styles/lightbox-plus-jquery.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+    <section class="section1" id="home">
+        <div class="nav">
+            <a href="#home">Mariyan</a>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav-links">
+                <li><a href="#home">home</a></li>
+                <li><a href="#about" >about</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact"><span>contact</span></a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="text">
+                <p class="hi">HI, IM</p>
+                <p class="name">Mariyan Popov</p>
+                <p class="job">Front - End Developer</p>
+                <a href="#portfolio">view portfolio</a>
+            </div>
+        </div>
+        <div class="person-image">
+            <img src="images/person.png" alt="me">
+        </div>
+    </section>
+    <section class="section2" id="about">
+        <div class="about-page-person">
+            <img src="images/me-person_250x280.png" alt="">
+        </div>
+        <div class="about-page-text">
+            <h1>About Me</h1>
+            <div class="main-text">
+                <p class="main-info">Hello everyone! Welcome to my website portfolio.My name is Mariyan Popov. I’m a sixteen years old boy living in a small Bulgarian town.
+                </p>
+                <p class="info">I enjoy studying computer technologies especially front - end development. My technological journey began almost a year ago. During this time I have learnt lots of new things and I keep improving every day. If you have ideas for a project contact with me </p>
+            </div>
+            <div class="progress">
+                <h3>HTML</h3><span class="bar"><span class="html"></span></span>
+                <h3>CSS / SCSS</h3><span class="bar"><span class="css"></span></span>
+                <h3>DESIGN</h3><span class="bar"><span class="design"></span></span>
+            </div>
+            <a href="#contact">Hire Me</a>
+        </div>
+    </section>
+    <section class="section3" id="services">
+        <h1>My Services</h1>
+        <div class="services">
+            <div class="box">
+                <div class="icon">
+                    <img src="images/web-dev-icon.png" alt="">
+                </div>
+                <div class="title">
+                    <p>Web Development</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <img src="images/web-design-icon.png" alt="">
+                </div>
+                <div class="title">
+                    <p>Web Design</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <img src="images/support-icon.png" alt="">
+                </div>
+                <div class="title">
+                    <p>Support</p>
+                </div>
+            </div>
+         </div>
+    </section>
+    <section class="gallery" id="portfolio">
+        <h1>Portfolio | Design projects</h1>
+        <div class="img-gallery">
+            <div class="box">
+               <a href="images/photo-1.png" data-lightbox="mygallery"><img src="images/photo-1small.png" alt=""></a>
+            </div>
+            <div class="box">
+                <a href="images/photo-2.png" data-lightbox="mygallery"><img src="images/photo-2small.png" alt=""></a>
+            </div>
+            <div class="box">
+                <a href="images/photo-3.png" data-lightbox="mygallery"><img src="images/photo-3small.png" alt=""></a>
+            </div>
+            <div class="box">
+                <a href="images/photo-4.png" data-lightbox="mygallery"><img src="images/photo-4small.png" alt=""></a>
+            </div>
+        </div>
+        <p>Click on image for full size*</p>
+    </section>
+    <section class="section4" id="contact">
+        <div class="containers">
+            <div class="container-form">
+                <h1>Get In Touch</h1>
+                <form action="https://formsubmit.co/mariqn.nz05@gmail.com" method="POST">
+                    <input type="text" name="_honey" style="display: none;">
+
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/html/Project13(%20Portfolio%20)/success.html">
+                    <input type="text" class="input-field" placeholder="Your Name :" name="Name" required>
+                    <input type="email" class="input-field"  placeholder="Your e-mail :" name="E-mail" required>
+                    <textarea class="input-field textarea-field" name="Message"  placeholder="Your message :" required></textarea>
+                    <button>Send Message</button>
+                </form>
+            </div>
+            <div class="container-details">
+                <h1 class="cd">Contact Details</h1>
+                <div class="detail-row">
+                    <img src="images/discord.png" alt="">
+                    <p>Murito #5297</p>
+                </div>
+                <div class="detail-row">
+                    <img src="images/mail.png" alt="">
+                    <p>mariqn.nz05@gmail.com</p>
+                </div>
+                <div class="social-media">
+                    <h1 class="cm">Social Media</h1>
+                    <div class="btns">
+                        <a href="https://www.facebook.com/profile.php?id=100005851508717" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/_murito__/?hl=bg" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h1>CONTENT</h1>
+                <ul class="footer-ul">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about" >about</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#contact"><span>contact</span></a></li>
+                </ul>
+            </div>
+            <div>
+                <h1>OTHER</h1>
+                <ul class="footer-ul" id="privacy">
+                    <li><a href="policy.html">privacy policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h1>SOCIAL MEDIA</h1>
+                <div class="btns-footer">
+                    <a href="https://www.facebook.com/profile.php?id=100005851508717" target="_blank"><img src="images/facebook.png" alt=""></a>
+                    <a href="https://www.instagram.com/_murito__/?hl=bg" target="_blank"><img src="images/instagram.png" alt=""></a>
+                </div>
+            </div>   
+        </div>
+        <div class="credits">
+            <div><p>Icons made by <a href="https://www.freepik.com" title="Freepik" target="_blank">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a></p></div>
+        </div>
+        <div class="author">
+            <p>Site creator: Mariyan Popov</p>
+        </div>
+    </footer>
+</body>
+</html>

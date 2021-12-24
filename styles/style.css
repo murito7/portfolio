@@ -124,7 +124,7 @@
     right: 0px;
     height: 54vh;
     top: 80px;
-    right: -100%;
+    top: -600%;
     width: 100%;
     background-color: #020202;
     display: -webkit-box;
@@ -147,7 +147,7 @@
     border-top: 0.1px solid #fff;
   }
   #click:checked ~ .nav-links {
-    right: 0%;
+    top: 100%;
   }
   .section1 .nav .nav-links li a {
     color: #fff;

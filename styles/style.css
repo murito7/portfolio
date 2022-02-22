@@ -1078,7 +1078,7 @@
 @media screen and (min-width: 320px) {
   .gallery {
     width: 100%;
-    height: 1200px;
+    height: 900px;
     background-color: #f3f3f3;
     overflow-x: hidden;
   }
@@ -1116,36 +1116,11 @@
     width: 100%;
     height: 100%;
   }
-  .gallery .soon-box {
-    padding: 0 10px;
-  }
-  .gallery .soon {
-    width: 300px;
-    height: 270px;
-    border: 1px solid  #2c2c2c;
-    margin: 0 auto;
-  }
-  .gallery .soon .title {
-    font-size: 20px;
-    text-align: center;
-    margin-left: 0;
-    margin-top: 20px;
-  }
-  .gallery .soon .desc {
-    margin-top: 15px;
-    text-align: justify;
-    padding: 0 20px;
-    margin-left: 0;
-    color: #000;
-  }
-  .gallery .soon .desc strong {
-    text-decoration: underline;
-  }
 }
 
 @media screen and (min-width: 375px) {
   .gallery {
-    height: 1230px;
+    height: 900px;
   }
   .gallery h1 {
     font-size: 28px;
@@ -1169,7 +1144,7 @@
 
 @media screen and (min-width: 768px) {
   .gallery {
-    height: 1350px;
+    height: 980px;
   }
   .gallery p {
     margin-left: 190px;
@@ -1182,7 +1157,7 @@
 
 @media screen and (min-width: 1024px) {
   .gallery {
-    height: 950px;
+    height: 600px;
   }
   .gallery p {
     margin-left: 120px;
@@ -1216,7 +1191,7 @@
 
 @media screen and (min-width: 1440px) {
   .gallery {
-    height: 1000px;
+    height: 650px;
   }
   .gallery h1 {
     margin-top: 60px;
@@ -1231,7 +1206,7 @@
 
 @media screen and (min-width: 1600px) {
   .gallery {
-    height: 880px;
+    height: 600px;
     overflow-y: hidden;
   }
   .gallery h1 {

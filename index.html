@@ -25,7 +25,6 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="./styles/lightbox-plus-jquery.min.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
 </head>
 <body>
     <section class="section1" id="home">
@@ -47,7 +46,7 @@
             <div class="text">
                 <p class="hi">HI, IM</p>
                 <p class="name">Mariyan Popov</p>
-                <p class="job">Front - End Developer</p>
+                <p class="job" id="text"></p>
                 <a href="#portfolio">view portfolio</a>
             </div>
         </div>
@@ -68,8 +67,8 @@
                     <p class="info">I enjoy studying computer technologies especially front - end development. My technological journey began a year ago. During this time I have learnt lots of new things and I kept improving every day. If you have ideas for a project contact with me </p>
                 </div>
                 <div class="progress">
-                    <h3>HTML</h3><span class="bar"><span class="html"></span></span>
-                    <h3>CSS / SCSS</h3><span class="bar"><span class="css"></span></span>
+                    <h3>HTML / CSS</h3><span class="bar"><span class="html"></span></span>
+                    <h3>REACT.JS</h3><span class="bar"><span class="css"></span></span>
                     <h3>DESIGN</h3><span class="bar"><span class="design"></span></span>
                 </div>
                 <a href="#contact">Hire Me</a>
@@ -141,14 +140,18 @@
             </div>
             <div class="container-details">
                 <h1 class="cd">Contact Details</h1>
-                <div class="detail-row">
-                    <img src="images/discord.png" alt="">
-                    <p>Murito #5297</p>
-                </div>
-                <div class="detail-row">
-                    <img src="images/mail.png" alt="">
-                    <p>mariqn.nz05@gmail.com</p>
-                </div>
+                <a href="https://github.com/murito7" target="_blank">
+                    <div class="detail-row">
+                        <img src="images/github.png" alt="">
+                        <p>murito7</p>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/mariyan-popov-7399b91a6/" target="_blank">
+                    <div class="detail-row">
+                        <img src="images/linkedin.png" alt="">
+                        <p>Mariyan Popov</p>
+                    </div>
+                </a>
                 <div class="social-media">
                     <h1 class="cm">Social Media</h1>
                     <div class="btns">
@@ -175,14 +178,7 @@
                 <ul class="footer-ul" id="privacy">
                     <li><a href="policy.html">privacy policy</a></li>
                 </ul>
-            </div>
-            <div>
-                <h1>SOCIAL MEDIA</h1>
-                <div class="btns-footer">
-                    <a href="https://www.facebook.com/profile.php?id=100005851508717" target="_blank"><img src="images/facebook.png" alt=""></a>
-                    <a href="https://www.instagram.com/_murito__/?hl=bg" target="_blank"><img src="images/instagram.png" alt=""></a>
-                </div>
-            </div>   
+            </div> 
         </div>
         <div class="credits">
             <div><p>Icons made by <a href="https://www.freepik.com" title="Freepik" target="_blank">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a></p></div>
@@ -191,5 +187,20 @@
             <p>Site creator: Mariyan Popov</p>
         </div>
     </footer>
+    <script type="text/javascript">
+        const text = document.getElementById("text");
+        const prog = "Front End Developer";
+        let idx = 1;
+
+        setInterval(writeText, 200);
+
+        function writeText(){
+            text.innerHTML = prog.slice(0,idx);
+            idx++;
+            if(idx>prog.length){
+                idx=1;
+            }
+        }
+    </script>
 </body>
 </html>

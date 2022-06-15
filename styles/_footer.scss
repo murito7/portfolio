@@ -1,7 +1,7 @@
 @media screen and (min-width:320px) {
     footer{
         width: 100%;
-        height: 520px;
+        height: 420px;
         background-color: #0e1525;
         overflow-x: hidden;
         h1{
@@ -27,6 +27,9 @@
                     color: #ffffff8c;
                 }
             }
+        }
+        .author{
+            text-align: center;
         }
     }
     .btns-footer{
@@ -62,7 +65,7 @@
 }
 @media screen and (min-width: 375px) {
     footer{
-        height: 500px;
+        height: 400px;
     }
 }
 @media screen and (min-width: 768px) {

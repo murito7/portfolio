@@ -949,7 +949,7 @@
 @media screen and (min-width: 320px) {
   .gallery {
     width: 100%;
-    height: 900px;
+    padding-bottom: 40px;
     background-color: #f3f3f3;
     overflow-x: hidden;
   }
@@ -964,7 +964,7 @@
   .gallery p {
     color: #2c2c2c;
     font-weight: 600;
-    margin-left: 20px;
+    text-align: center;
   }
   .gallery .img-gallery {
     display: flex;
@@ -982,14 +982,8 @@
   }
 }
 @media screen and (min-width: 375px) {
-  .gallery {
-    height: 900px;
-  }
   .gallery h1 {
     font-size: 28px;
-  }
-  .gallery p {
-    margin-left: 40px;
   }
   .gallery .soon {
     width: 320px;
@@ -999,29 +993,14 @@
   .gallery h1 {
     font-size: 30px;
   }
-  .gallery p {
-    margin-left: 60px;
-  }
 }
 @media screen and (min-width: 768px) {
-  .gallery {
-    height: 980px;
-  }
-  .gallery p {
-    margin-left: 190px;
-  }
   .gallery .img-gallery .box {
     width: 400px;
     height: 200px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .gallery {
-    height: 600px;
-  }
-  .gallery p {
-    margin-left: 120px;
-  }
   .gallery h1 {
     position: relative;
   }
@@ -1046,9 +1025,6 @@
   }
   .gallery h1 {
     margin-top: 60px;
-  }
-  .gallery p {
-    margin-left: 530px;
   }
   .gallery .soon-h1 {
     margin-top: 0;

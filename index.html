@@ -97,7 +97,31 @@
             <h3>DESIGN</h3>
             <span class="bar"><span class="design"></span></span>
           </div>
-          <a href="#contact">Hire Me</a>
+          <div class="btn--group">
+            <button id="show-modal">View All &#x2192;</button>
+            <a href="#contact">Hire Me</a>
+          </div>
+          <div class="modal hidden">
+            <button class="close-modal">&times;</button>
+            <div class="progress">
+              <div class="left">
+                <h3>HTML / CSS</h3>
+                <span class="bar"><span class="html"></span></span>
+                <h3>React.js</h3>
+                <span class="bar"><span class="css"></span></span>
+                <h3>JavaScript</h3>
+                <span class="bar"><span class="js"></span></span>
+              </div>
+              <div class="right">
+                <h3>Web Design</h3>
+                <span class="bar"><span class="design"></span></span>
+                <h3>Web Development</h3>
+                <span class="bar"><span class="development"></span></span>
+                <h3>Git</h3>
+                <span class="bar"><span class="git"></span></span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -277,20 +301,6 @@
         <p>Site creator: Mariyan Popov</p>
       </div>
     </footer>
-    <script type="text/javascript">
-      const text = document.getElementById("text");
-      const prog = "Front End Developer";
-      let idx = 1;
-
-      setInterval(writeText, 200);
-
-      function writeText() {
-        text.innerHTML = prog.slice(0, idx);
-        idx++;
-        if (idx > prog.length) {
-          idx = 1;
-        }
-      }
-    </script>
+    <script src="app.js"></script>
   </body>
 </html>

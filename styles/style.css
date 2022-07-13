@@ -245,6 +245,7 @@
 @media screen and (min-width: 320px) {
   .section2 {
     width: 100%;
+    overflow: hidden;
     background-color: #fff;
   }
   .section2 .about-page-person {
@@ -300,10 +301,9 @@
     border: none;
   }
   .section2 .about-page-text .modal {
-    position: absolute;
-    top: 190%;
-    left: 50%;
     transform: translate(-50%, -50%);
+    left: 50%;
+    position: absolute;
     width: 90%;
     background-color: white;
     padding: 1rem;
@@ -540,7 +540,7 @@
   }
   .section2 .about-page-text .modal {
     width: 90%;
-    top: 170%;
+    margin-top: -60px;
     left: 50%;
     padding: 50px;
   }
@@ -578,7 +578,6 @@
   }
   .section2 .about-page-text .modal {
     width: 70%;
-    top: 117%;
     left: 62%;
   }
   .section2 .about-page-text .progress {
@@ -627,7 +626,6 @@
   }
   .section2 .about-page-text .modal {
     width: 60%;
-    top: 120%;
     left: 68%;
   }
   .section2 .about-page-text .modal .progress {
@@ -653,8 +651,7 @@
   }
   .section2 .about-page-text .modal {
     width: 50%;
-    left: 65%;
-    top: 125%;
+    left: 70%;
   }
   .section2 .about-page-text .main-text {
     margin-right: 220px;
@@ -675,7 +672,6 @@
   .section2 .about-page-text .modal {
     width: 50%;
     left: 70%;
-    top: 90%;
   }
   .section2 .about-page-text .main-text {
     margin-right: 430px;
